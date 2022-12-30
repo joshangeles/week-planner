@@ -34,10 +34,6 @@ textarea {
   flex-basis: 100%;
 }
 
-/* .entry-bttn {
-
-} */
-
 .position-fixed {
   position: fixed;
 }
@@ -58,7 +54,7 @@ textarea {
 }
 
 .padding-top {
-  padding-top: 8rem;
+  padding-top: 4rem;
 }
 
 .txt-align-center {
@@ -85,4 +81,18 @@ textarea {
 
 .description {
   margin: 15px 0;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.circle-button {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
 }
