@@ -11,7 +11,8 @@ addEntry.addEventListener('click', function (e) {
 
 entryForm.addEventListener('click', function (e) {
   e.preventDefault();
-
+  var submitButton = entryForm.querySelector('button[type="submit"]');
+  if (e.target === submitButton) {
+    modalContainer.className += ' hidden';
+  }
 });
-
-// console.log(date);
