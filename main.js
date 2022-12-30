@@ -14,19 +14,20 @@ addEntry.addEventListener('click', function (e) {
   modalContainer.className = 'container';
 });
 
-entryForm.addEventListener('click', function (e) {
+entryForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  var submitButton = entryForm.querySelector('button[type="submit"]');
-  if (e.target === submitButton) {
-    modalContainer.className += ' hidden';
-    var entry = {
-      date: date.value,
-      time: time.value,
-      description: description.value
-    };
-    data.nextEntryId++;
-    data.entries.push(entry);
+  modalContainer.className += ' hidden';
+  var entry = {
+    date: date.value,
+    time: time.value,
+    description: description.value,
+    entryId: data.nextEntryId
+  };
+  data.nextEntryId++;
+  data.entries.push(entry);
+}
+);
 
-  }
+// function renderEntry(entry) {
 
-});
+// }
