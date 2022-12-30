@@ -25,6 +25,13 @@ entryForm.addEventListener('submit', function (e) {
   };
   data.nextEntryId++;
   data.entries.push(entry);
+
+  var btnRow = document.querySelector('#button-row');
+
+  if (data.entries.length > 0) {
+    btnRow.className = 'row txt-align-center';
+  }
+  return btnRow;
 }
 );
 
