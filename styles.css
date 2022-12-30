@@ -27,10 +27,37 @@ h1 {
 
 } */
 
+.position-fixed {
+  position: fixed;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.background-black {
+  background-color: rgba(0, 0, 0, 0.573);
+}
+
+.fill {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.padding-top {
+  padding-top: 8rem;
+}
+
 .txt-align-center {
   text-align: center;
 }
 
 .hidden {
   display: none;
+}
+
+#modal {
+  margin: 5rem;
 }
