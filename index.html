@@ -28,8 +28,8 @@
           <form action="">
             <h2 class="txt-align-center">Add Entry</h2>
             <div class="date-time">
-              <select name="entry-form" id="day">
-                <option value="">day of the week</option>
+              <select name="entry-form" id="day" required="true">
+                <option value="" >day of the week</option>
                 <option value="monday">Monday</option>
                 <option value="tuesday">Tuesday</option>
                 <option value="wednesday">Wednesday</option>
@@ -38,10 +38,10 @@
                 <option value="saturday">Saturday</option>
                 <option value="sunday">Sunday</option>
               </select>
-              <input type="time" id="time">
+              <input type="time" id="time" required="true">
             </div>
             <div class="description">
-              <textarea name="description" placeholder="Enter Plans Here"></textarea>
+              <textarea name="description" placeholder="Enter Plans Here" required="true"></textarea>
             </div>
             <div class="btn-submit">
               <button type="submit">Submit</button>
