@@ -4,6 +4,7 @@ var entryForm = document.querySelector('form');
 var date = document.querySelector('#day');
 var time = document.querySelector('#time');
 var description = document.querySelector('textarea');
+// var $containerDiv = document.querySelector('#table-container');
 var data = {
   entries: [],
   editing: null,
@@ -36,5 +37,26 @@ entryForm.addEventListener('submit', function (e) {
 );
 
 // function renderEntry(entry) {
+//   var $divRow = document.createElement('div');
+//   $divRow.className = 'row';
+//   $containerDiv.appendChild($divRow);
 
+//   var $divColumn = document.createElement('div');
+//   $divColumn.className = 'column-full';
+//   $divRow.appendChild($divColumn);
+
+//   var $h2 = document.createElement('h2');
+//   $divColumn.appendChild($h2);
+
+//   var $table = document.createElement('table');
+//   $divColumn.appendChild($table);
+
+//   var $thead = document.createElement('thead');
+//   $table.appendChild($thead);
+
+//   var $tr = document.createElement('tr');
+//   $thead.appendChild($tr);
+
+//   var $th = document.createElement('th');
+//   $tr.appendChild($th);
 // }
